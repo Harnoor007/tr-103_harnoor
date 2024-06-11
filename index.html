@@ -11,9 +11,34 @@
             margin: 0;
             padding: 0;
         }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        header .title {
+            flex-grow: 1;
+            text-align: center;
+        }
+        footer .info {
+            flex-grow: 0;
+            margin: 10;
+            /* text-align: left; */
+        }
+        footer p {
+            margin: 10;
+            font-size: 14px;
+        }
         h1 {
             text-align: center;
-            color: #333;
+            color: #fcfbfb;
             margin-top: 20px;
         }
         ul {
@@ -22,7 +47,7 @@
             max-width: 1000px;
             margin: 20px auto;
             background-color: #fff;
-            border-radius: 100px;
+            border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         ul a {
@@ -32,7 +57,7 @@
             color: #007BFF;
             font-size: 18px;
             background-color: #f9f9f9;
-            border-radius: 100px;
+            border-radius: 10px;
             transition: background-color 0.3s, color 0.3s;
         }
         ul a:hover {
@@ -42,11 +67,22 @@
     </style>
 </head>
 <body>
-    <h1>TR-103 Progress</h1>
+    <header>
+        <div class="title">
+            <h1>TR-103 Progress</h1>
+        </div>
+    </header>
     <ul>
         <li><a href="Day1/Pages/index.html">Day 1: Basic HTML, Github introduction.</a></li>
         
         <!-- Add more days here as <li><a href="DayN/Pages/index.html">Day N</a></li> -->
     </ul>
+    <footer>
+        <div class="info">
+            Name: Harnoor Birdi<br>
+            URN: 2104113
+        </div>
+        <p>&copy; 2024. All rights reserved.</p>
+    </footer>
 </body>
 </html>
