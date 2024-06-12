@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #FFD700;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    float: left;
+    margin: 20px;
+    width: 10%;
+}
+
+.header .img{
+    float: left;
+}
+
+nav ul {
+    list-style-type: none;
+    float: right;
+    margin-top: 50px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+.contact-info {
+    top: 20px;
+    right: 20px;
+    text-align: right;
+    float: right;
+    font-size: 18px;
+    width: 80%;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+.hero {
+    margin-top: 130px;
+    float: left;
+    margin-left: 5%;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #333;
+}
+
+.hero p {
+    font-size: 28px;
+    color: #333;
+}
+
+.hero button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.choose-enjoy, .upcoming-events, .try-today, .reservation, footer {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.choose-enjoy h2, .upcoming-events h2, .reservation h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.choose-enjoy p, .upcoming-events p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.dishes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dish {
+    width: 30%;
+}
+
+.dish img {
+    width: 80%;
+    border-radius: 90%;
+    image-rendering: pixelated;
+    height: 80%;
+}
+
+.dish p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.dish button {
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.upcoming-events .events img {
+    width: 30%;
+    margin: 10px;
+    image-rendering: pixelated;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.try-today {
+    /* display: flex; */
+    /* justify-content: space-around; */
+}
+
+.try-today .item {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.try-today .item-d {
+    float: left;
+    margin: 10px;
+    width: 32%;
+}
+
+.try-today .item img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.try-today .item-d img {
+    float: left;
+    width: 100%;
+}
+
+.try-today .item p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.try-today .item-d p { 
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.reservation form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reservation input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 200px;
+}
+
+.reservation button {
+    background-color: yellow;
+    color: black;
+    padding: 10px 60px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+footer .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer .contact-info {
+    text-align: right;
+}
+
+footer .social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}

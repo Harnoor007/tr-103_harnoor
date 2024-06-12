@@ -1,0 +1,94 @@
+.container{
+    width: 1170px;
+    height: auto;
+    margin: 0 auto;
+}
+.container .header{
+    width: 1170px;
+    height: 100px;
+    background-color: #c51e1e;
+}
+.container .containerRow1 .content1{
+    width: 292.5px;
+    background-color: #13678A;
+    height: 100px;
+    float: left;
+}
+.container .containerRow1 .content2{
+    width: 292.5px;
+    background-color: #45C4B0;
+    height: 100px;
+    float: left;
+}
+.container .containerRow1 .content3{
+    width: 292.5px;
+    background-color: #9AEBA3;
+    height: 100px;
+    float: left;
+}
+.container .containerRow1 .content4{
+    width: 292.5px;
+    background-color: #ce9630;
+    height: 100px;
+    float: left;
+}
+.container .containerRow2 .content4{
+    width: 292.5px;
+    background-color: #93D94E;
+    height: 100px;
+    float: left;
+}
+.container .containerRow2 .content5{
+    width: 292.5px;
+    background-color: #347355;
+    height: 100px;
+    float: left;
+}
+.container .containerRow2 .content6{
+    width: 585px;
+    background-color: #43a7a7;
+    height: 100px;
+    float: left;
+}
+.container .containerRow3 .content7{
+    width: 585px;
+    background-color: #ad4ed9;
+    height: 100px;
+    float: left;
+}
+.container .containerRow3 .content8{
+    width: 292.5px;
+    background-color: #ca3f8c;
+    height: 100px;
+    float: left;
+}
+.container .containerRow3 .content9{
+    width: 292.5px;
+    background-color: #0cff5d;
+    height: 100px;
+    float: left;
+}
+.container .containerRow4 .content10{
+    width: 292.5px;
+    background-color: #2d123a;
+    height: 100px;
+    float: left;
+}
+.container .containerRow4 .content11{
+    width: 585px;
+    background-color: #0059ff;
+    height: 100px;
+    float: left;
+}
+.container .containerRow4 .content12{
+    width: 292.5px;
+    background-color: #ffa600;
+    height: 100px;
+    float: left;
+}
+.container .containerRow5 .content13{
+    width: 1170px;
+    background-color: #ff00ea;
+    height: 100px;
+    float: left;
+}
