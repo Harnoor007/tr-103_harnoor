@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0 auto;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;;
 }
 
 header {
@@ -135,8 +135,7 @@ nav ul li a {
 }
 
 .try-today {
-    /* display: flex; */
-    /* justify-content: space-around; */
+    margin: 0 auto;
 }
 
 .try-today .item {
@@ -148,19 +147,24 @@ nav ul li a {
 
 .try-today .item-d {
     float: left;
-    margin: 10px;
+    margin-left: 300px;
     width: 32%;
 }
 
 .try-today .item img {
+    margin-left: 5px;
     display: flex;
     flex-direction: column;
     width: 100%;
+    image-rendering: pixelated;
+    height: 250px;
 }
 
 .try-today .item-d img {
     float: left;
     width: 100%;
+    image-rendering: pixelated;
+    height: 600px;
 }
 
 .try-today .item p {
@@ -210,6 +214,7 @@ footer .footer-content {
 footer .logo {
     font-size: 24px;
     font-weight: bold;
+    width: 20%;
 }
 
 footer p {
@@ -218,9 +223,12 @@ footer p {
 
 footer .contact-info {
     text-align: right;
+    width: 80%;
 }
 
 footer .social-media a {
+    display: flex;
+    flex-direction: column;
     color: white;
     margin: 0 10px;
     text-decoration: none;
