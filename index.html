@@ -7,39 +7,53 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background: linear-gradient(45deg, rgb(106, 106, 255), rgb(255, 110, 110));
             margin: 0;
             padding: 0;
         }
-        header, footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
+        .container {
+            max-width: 1270px;
+            margin: 0 auto;
+            padding: 0 15px;
         }
-        header {
+        header, footer {
+            background-color: #000a94;
+            color: #fff;
+            padding: 10px 0;
+            width: 100%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 20px;
         }
-        header .title {
+        .footer-content {
+            display: flex;
+    justify-content: center;
+    align-items: center;
+        }
+        .logo {
+            flex-grow: 0;
+        }
+        .title {
             flex-grow: 1;
             text-align: center;
         }
-        footer .info {
+        .info {
             flex-grow: 0;
-            margin: 10;
-            /* text-align: left; */
+            text-align: right;
+        }
+        footer {
+            text-align: center;
         }
         footer p {
-            margin: 10;
+            margin: 10px;
             font-size: 14px;
         }
         h1 {
-            text-align: center;
             color: #fcfbfb;
-            margin-top: 20px;
+            margin: 0;
         }
         ul {
             list-style-type: none;
@@ -50,44 +64,95 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        ul a {
-            display: block;
-            padding: 15px 20px; 
+        ul li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            margin: 10px 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        ul li a {
             text-decoration: none;
             color: #007BFF;
             font-size: 18px;
-            background-color: #f9f9f9;
-            border-radius: 10px;
-            transition: background-color 0.3s, color 0.3s;
         }
-        ul a:hover {
+        ul li a:hover {
             background-color: #007BFF;
             color: #fff;
+        }
+        .report-button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+        .report-button:hover {
+            background-color: #0056b3;
+        }
+        .logo img {
+            height: 100px;
+        }
+        .info {
+            font-size: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="title">
-            <h1>TR-103 Progress</h1>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="/assets/gne.png" alt="Logo">
+                </div>
+                <div class="title">
+                    <h1>TR-103 (Semantic Web)</h1>
+                </div>
+                <div class="info">
+                    <div>Name: Harnoor Birdi</div>
+                    <div>URN: 2104113</div>
+                </div>
+            </div>
         </div>
     </header>
-    <ul>
-        <li><a href="Day1/Pages/index.html">Day 1: Basic HTML, Github introduction.</a></li>
-        <li><a href="Day2/html/index.html">Day 2: Concept of float, class and id. Designed basic sections in a webpage using float property.</a></li>
-        <li><a href="Day2-Food_Website/html/index.html">Day 2 HW: Food Website Template.</a></li>
-        <li><a href="Day3/class_project/html/index.html">Day 3: Designed a webpage Conept of fluidity introduced. Used various images and vectors in the webpage.</a></li>
-        <li><a href="Day3-HomeWrk/pages/index.html">Day 3 HW: Designed a webpage of a travel company.</a></li>
-
-        
-        <!-- Add more days here as <li><a href="DayN/Pages/index.html">Day N</a></li> -->
-    </ul>
+    <div class="container">
+        <ul>
+            <li>
+                <a href="Day1/Pages/index.html">Day 1: Basic HTML, Github introduction.</a>
+                <a href="/assets/reports/day1.pdf" class="report-button" target="_blank">Show Report</a>
+            </li>
+            <li>
+                <a href="Day2/html/index.html">Day 2: Concept of float, class and id.</a>
+                <a href="/assets/reports/day2.pdf" class="report-button" target="_blank">Show Report</a>
+            </li>
+            <li>
+                <a href="Day2-Food_Website/html/index.html">Day 2 HW: Food Website Template.</a>
+                <!-- <a href="Day2-Food_Website/report.pdf" class="report-button" target="_blank">Show Report</a> -->
+            </li>
+            <li>
+                <a href="Day3/class_project/html/index.html">Day 3: Concept of fluidity introduced.</a>
+                <a href="/assets/reports/day3.pdf" class="report-button" target="_blank">Show Report</a>
+            </li>
+            <li>
+                <a href="Day3-HomeWrk/pages/index.html">Day 3 HW: Designed a webpage of a travel company.</a>
+                <!-- <a href="Day3-HomeWrk/report.pdf" class="report-button" target="_blank">Show Report</a> -->
+            </li>
+            <!-- Add more days here as <li><a href="DayN/Pages/index.html">Day N</a><a href="DayN/report.pdf" class="report-button" target="_blank">Show Report</a></li> -->
+        </ul>
+    </div>
     <footer>
-        <div class="info">
-            Name: Harnoor Birdi<br>
-            URN: 2104113
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024. All rights reserved.</p>
+            </div>
         </div>
-        <p>&copy; 2024. All rights reserved.</p>
     </footer>
 </body>
 </html>
